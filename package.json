@@ -1,0 +1,44 @@
+{
+  "name": "@vijayishere/gstin-validate",
+  "version": "1.0.0",
+  "description": "Validate and parse Indian GSTIN numbers, including checksum verification and the embedded PAN",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "gstin",
+    "gst",
+    "india",
+    "validator",
+    "kyc",
+    "tax-id"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjymisal0/gstin-validate.git"
+  },
+  "homepage": "https://github.com/vjymisal0/gstin-validate#readme",
+  "bugs": {
+    "url": "https://github.com/vjymisal0/gstin-validate/issues"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vijayishere/pan-validator": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
