@@ -1,17 +1,17 @@
-# @vijayishere/gstin-validate
+# gst-validator
 
 Validate and parse Indian GSTIN numbers - real checksum verification, state-code lookup, and the embedded PAN, all offline.
 
 ## Install
 
 ```bash
-npm install @vijayishere/gstin-validate
+npm install gst-validator
 ```
 
 ## Usage
 
 ```js
-import { isValidGstin, parseGstin } from '@vijayishere/gstin-validate';
+import { isValidGstin, parseGstin } from 'gst-validator';
 
 isValidGstin('27AAAPL1234C1ZE'); // true
 isValidGstin('not-a-gstin');     // false
@@ -48,7 +48,7 @@ This library checks, all offline:
 - **Format**: matches the 15-character structure above
 - **State code**: must be a real, currently-assigned GST state/UT code (not just any two digits)
 - **Checksum**: recomputes the mod-36 check digit and confirms it matches - this catches typos that a regex alone would miss
-- **Embedded PAN**: delegates to [`@vijayishere/pan-validator`](https://www.npmjs.com/package/@vijayishere/pan-validator) to confirm the embedded PAN has a valid structure and holder-category code
+- **Embedded PAN**: delegates to [`pan-card-validator`](https://www.npmjs.com/package/pan-card-validator) to confirm the embedded PAN has a valid structure and holder-category code
 
 Like PAN validation, this confirms a GSTIN is *well-formed and internally consistent* - it cannot confirm the GSTIN is *actually registered*. That requires the [GST Network's own verification API](https://www.gst.gov.in/).
 

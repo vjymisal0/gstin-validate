@@ -1,4 +1,4 @@
-import { parsePan } from '@vijayishere/pan-validator';
+import { parsePan } from 'pan-card-validator';
 
 // Public spec: 2 state code + 10-char PAN + 1 entity number + 'Z' + 1 checksum.
 const GSTIN_PATTERN = /^([0-9]{2})([A-Z]{5}[0-9]{4}[A-Z])([1-9A-Z])(Z)([0-9A-Z])$/;
