@@ -1,6 +1,6 @@
 {
   "name": "gst-validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Validate and parse Indian GSTIN numbers, including checksum verification and the embedded PAN",
   "type": "module",
   "main": "./src/index.js",
@@ -43,7 +43,7 @@
   "author": "Vijay Misal <misalvijay153@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "pan-card-validator": "^1.0.0"
+    "pan-card-validator": "1.0.4"
   },
   "engines": {
     "node": ">=18"
