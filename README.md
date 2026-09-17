@@ -60,3 +60,7 @@ Like PAN validation, this confirms a GSTIN is *well-formed and internally consis
 ## License
 
 MIT
+
+## Limitations
+
+Validation checks structure, checksum, and embedded PAN format. It does not confirm registration status or taxpayer ownership.
