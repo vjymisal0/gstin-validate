@@ -2,7 +2,7 @@
 
 ## Module format
 
-This package is ESM-only. Use `import` syntax in Node.js projects with `type: module`. CommonJS applications can load it with `await import("gst-validator")`.
+This package supports both ESM and CommonJS. Use `import` or `require()` depending on your project.
 
 
 Validate and parse Indian GSTIN numbers - real checksum verification, state-code lookup, and the embedded PAN, all offline.

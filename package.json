@@ -1,14 +1,20 @@
 {
   "name": "gst-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Validate and parse Indian GSTIN numbers, including checksum verification and the embedded PAN",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.d.ts",
-      "import": "./src/index.js"
+      "import": {
+        "types": "./src/index.d.ts",
+        "default": "./src/index.js"
+      },
+      "require": {
+        "types": "./src/index.d.cts",
+        "default": "./src/index.cjs"
+      }
     }
   },
   "files": [
